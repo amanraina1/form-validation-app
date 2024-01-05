@@ -12,27 +12,33 @@
       <form class="form">
         <!-- Full name -->
         <div class="form-field">
-          <label for="fullName">Full Name</label>
+          <label for="name">Full Name</label>
           <br />
-          <input type="text" placeholder="Full Name" />
+          <input
+            type="text"
+            placeholder="Full Name"
+            required
+            minlength="3"
+            maxlength="100"
+          />
         </div>
         <!-- Phone Number -->
         <div class="form-field">
           <label for="phone">Phone Number</label>
           <br />
-          <input type="tel" placeholder="+91-9080706050" />
+          <input type="tel" placeholder="+91-9080706050" required />
         </div>
         <!-- Email Address -->
         <div class="form-field">
           <label for="email">Email Address</label>
           <br />
-          <input type="email" placeholder="email@address.com" />
+          <input type="email" placeholder="email@address.com" required />
         </div>
         <!-- Website URL -->
         <div class="form-field">
-          <label for="websiteUrl">Website URL</label>
+          <label for="website">Website URL</label>
           <br />
-          <input type="url" placeholder="http://jacitodesign.com" />
+          <input type="url" placeholder="http://jacitodesign.com" required />
         </div>
         <!-- Password -->
         <div class="form-field">
@@ -41,17 +47,18 @@
           <input
             type="password"
             placeholder="Create Password (Min. 8 characters)"
+            required
           />
         </div>
         <!-- Confirm Password -->
         <div class="form-field">
           <label for="password">Confirm Password</label>
           <br />
-          <input type="password" placeholder="Confirm Password" />
+          <input type="password" placeholder="Confirm Password" required />
         </div>
       </form>
       <!-- Register Button -->
-      <button>Register</button>
+      <button type="submit">Register</button>
       <div class="text">Don't Hesitate!</div>
     </div>
   </body>
